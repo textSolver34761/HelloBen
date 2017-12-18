@@ -16,7 +16,7 @@
             font-family: "Varela Round", sans-serif;
             margin: 0;
             padding: 0;
-            background: radial-gradient(#57bfc7, #45a6b3);
+            /**background: radial-gradient(#57bfc7, #45a6b3);*/
         }
 
         .container {
@@ -38,7 +38,7 @@
         .links a {
             font-size: 1.25rem;
             text-decoration: none;
-            color: white;
+            color: black;
             margin: 10px;
         }
 
@@ -52,6 +52,18 @@
     </style>
 </head>
 <body>
+<div class="flex-center position-ref full-height">
+@if (Route::has('login'))
+    <div class="top-right links">
+        @auth
+            <a href="{{ url('/home') }}">Home</a>
+        @else
+            <a href="{{ route('login') }}">Login</a>
+            <a href="{{ route('register') }}">Register</a>
+        @endauth
+@endif
+    </div>
+</div>
 <div class="container">
     <div class="content">
         <div class="logo">
