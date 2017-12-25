@@ -34,4 +34,18 @@ class BotManController extends Controller
     {
         $bot->startConversation(new ExampleConversation());
     }
+    
+    public function callme(){
+        $botman = app('botman');
+        $botman->hears('call me {name}', function ($bot, $name) {
+        $bot->reply('Your name is: '.$name);
+    });
+    }
+
+    public function Iam(){
+        $botman = app('botman');
+        $botman->hears('call me {name} the {adjective}', function ($bot, $name, $adjective) {
+        $bot->reply('Your name is: '.$name 'and you are the'.$adjective);
+    });
+
 }

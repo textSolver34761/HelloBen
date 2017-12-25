@@ -38,7 +38,14 @@ class ExampleConversation extends Conversation
     /**
      * Start the conversation
      */
-    public function run()
+    public function callme(){
+        $question = Question::create("I should I call you?")
+        ->fallback('Unable to ask the question')
+        ->callbackId('askReason')
+        $botman->hears('call me {name}', function ($bot, $name) {
+        $bot->reply('Your name is: '.$name);
+    });
+    }
     {
         $this->askReason();
     }

@@ -21,3 +21,5 @@ Route::get('/botman/tinker', 'BotManController@tinker');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::match(['get', 'post'], '/botman', 'BotManController@callme');

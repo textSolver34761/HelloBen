@@ -71,7 +71,7 @@
         </div>
 
         <div class="links">
-            <a href="/botman/tinker">Tinker</a>
+            <a href="/botman/tinker">Chat with me!</a>
             <a href="https://botman.io/docs" target="_blank">Documentation</a>
             <a href="https://twitter.com/botman_io" target="_blank">News</a>
             <a href="https://rauchg-slackin-jtdkltstsj.now.sh/" target="_blank">Slack</a>
@@ -79,5 +79,10 @@
         </div>
     </div>
 </div>
+<div id="app">
+    <h1> Chat with me</h1>
+    <botman-tinker></botman-tinker>
+</div>
+<script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>

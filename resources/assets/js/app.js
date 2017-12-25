@@ -20,3 +20,4 @@ Vue.component('botman-tinker', require('./components/BotManTinker.vue'));
 const app = new Vue({
     el: '#app'
 });
+

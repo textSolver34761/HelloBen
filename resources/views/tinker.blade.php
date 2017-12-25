@@ -37,7 +37,6 @@
         <botman-tinker></botman-tinker>
     </div>
 </div>
-
 <script src="/js/app.js"></script>
 </body>
 </html>

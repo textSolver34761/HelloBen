@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e5b7381ca75ff07e45e79c38b51aa50",
+    "content-hash": "7baaf9feaea4417e72754d05b889d774",
     "packages": [
         {
             "name": "botman/botman",
@@ -174,16 +174,16 @@
         },
         {
             "name": "botman/tinker",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/botman/tinker.git",
-                "reference": "45975f93d95cd8961f52a60149828450bc38f254"
+                "reference": "dc8889665f4821e3e9cb98c2559a7a8a8c9cc381"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/botman/tinker/zipball/45975f93d95cd8961f52a60149828450bc38f254",
-                "reference": "45975f93d95cd8961f52a60149828450bc38f254",
+                "url": "https://api.github.com/repos/botman/tinker/zipball/dc8889665f4821e3e9cb98c2559a7a8a8c9cc381",
+                "reference": "dc8889665f4821e3e9cb98c2559a7a8a8c9cc381",
                 "shasum": ""
             },
             "require": {
@@ -197,6 +197,13 @@
                 "phpunit/phpunit": "~5.0"
             },
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BotMan\\Tinker\\TinkerServiceProvider"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "BotMan\\Tinker\\": "src/"
@@ -220,7 +227,7 @@
                 "bot",
                 "laravel"
             ],
-            "time": "2017-08-28T13:52:19+00:00"
+            "time": "2017-10-29T08:41:47+00:00"
         },
         {
             "name": "clue/stdio-react",
